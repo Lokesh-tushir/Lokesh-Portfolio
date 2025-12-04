@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Help</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Tushir.dev\</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="Help.html">Help</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Help & Contact</h1>
+        <p>Need assistance or want to collaborate? I'm here to help! Reach out through any of the channels below.</p>
+        
+        <div class="card-grid">
+            <div class="card contact-card" style="grid-column: 1 / -1;">
+                <h3>📧 Contact Me</h3>
+                <p>Send a direct message using the form below. This uses EmailJS (client-side) if you configure it, otherwise it falls back to your mail client.</p>
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn" id="send-btn">Send Email</button>
+                        <button type="button" class="btn btn-ghost" id="mailto-btn">Open Email App</button>
+                    </div>
+                    <p id="contact-feedback" class="small-text" aria-live="polite"></p>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>🐙 GitHub</h3>
+                <p>Check out my repositories and contributions on GitHub. See my work in action and explore my open-source projects.</p>
+                <a href="https://github.com/Lokesh-tushir" target="_blank" rel="noopener" class="btn">Visit GitHub</a>
+            </div>
+            <div class="card">
+                <h3>💼 LinkedIn</h3>
+                <p>Connect with me on LinkedIn to learn more about my professional background and experience.</p>
+                <a href="https://www.linkedin.com/in/lokesh-tushir/" target="_blank" rel="noopener" class="btn">Visit LinkedIn</a>
+            </div>
+            <div class="card">
+                <h3>📸 Instagram</h3>
+                <p>I will provide my Instagram link soon — this button will redirect to it once you supply the URL.</p>
+                <a href="#instagram-placeholder" id="instagram-link" class="btn">Visit Instagram</a>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px; padding: 30px; background: rgba(0, 243, 255, 0.1); border: 1px solid rgba(0, 243, 255, 0.3); border-radius: 15px;">
+            <h3 style="color: #00f3ff; margin-bottom: 15px;">Response Time</h3>
+            <p>I typically respond to inquiries within 24-48 hours. For urgent matters, please mention it in your message.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
